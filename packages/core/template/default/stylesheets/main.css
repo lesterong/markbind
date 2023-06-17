@@ -10,13 +10,14 @@
     --color-blockquote: #6a737d;
     --border-blockquote: 0.25em solid #dfe2e5;
     --bg-table: #fff;
+    --border-color-table: #dee2e6;
     --color-site-nav-list-item: #454545;
 }
 
 [data-theme="dark"] {
     --bg-primary: #121212;
     --color-primary: #fff;
-    --border-primary: 1px solid #a9a9a9;
+    --border-primary: 1px solid #555;
     --bg-secondary: #333;
     --color-secondary: #ccc;
     --color-tertiary: #a9a9a9;
@@ -25,6 +26,7 @@
     --color-blockquote: #999;
     --border-blockquote: 0.25em solid #bbb;
     --bg-table: #222;
+    --border-color-table: #555;
     --color-site-nav-list-item: #ccc;
 }
 
@@ -33,12 +35,27 @@ body {
     background-color: var(--bg-primary);
 }
 
+.nav-link,
 a {
     color: var(--color-link);
 }
 
+.nav-link:hover,
 a:hover {
     color: var(--color-link-hover);
+}
+
+.dropdown-menu {
+    background-color: var(--bg-primary);
+}
+
+.dropdown-menu > li > a {
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.dropdown-divider {
+    border: var(--border-primary);
 }
 
 mark {
@@ -133,7 +150,7 @@ mark {
 }
 
 #page-nav {
-    border-left: 1px solid lightgrey;
+    border-left: var(--border-primary);
 }
 
 @media screen and (max-width: 1299.98px) {
