@@ -41,7 +41,9 @@
         <div
           ref="headerWrapper"
           :class="['header-wrapper card-title', cardType,
-                   {'text-white':!isLightBg, 'header-transparent':!shouldShowHeader}]"
+                   {'text-black':isLightBg && cardType,
+                    'text-white':!isLightBg && cardType,
+                    'header-transparent':!shouldShowHeader}]"
         >
           <slot name="header"></slot>
         </div>
@@ -148,10 +150,10 @@ export default {
       return '';
     },
     cardType() {
-      if (this.isSeamless) {
-        return 'bg-white';
+      if (this.isSeamless || !this.type) {
+        return '';
       }
-      return `bg-${this.type || 'light'}`;
+      return `bg-${this.type}`;
     },
     isLightBg() {
       return this.cardType === 'bg-light' || this.cardType === 'bg-white' || this.cardType === 'bg-warning';
@@ -170,9 +172,18 @@ export default {
         transition: max-height 0.5s ease-in-out;
     }
 
+    .card-body {
+        color: var(--color-primary);
+    }
+
     .seamless-button {
         opacity: 0;
         transition: 0.3s opacity;
+    }
+
+    .card-header {
+        color: var(--color-primary);
+        background-color: var(--bg-primary);
     }
 
     .card-header:hover .seamless-button {
@@ -271,6 +282,7 @@ export default {
     }
 
     .expandable-card {
+        background-color: var(--bg-primary);
         margin-bottom: 0 !important;
         margin-top: 5px;
     }
