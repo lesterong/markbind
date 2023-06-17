@@ -208,6 +208,10 @@ export default {
         background-image: linear-gradient(180deg, transparent, white 90%);
     }
 
+    [data-theme="dark"] .card-peek-collapsed::after {
+      background-image: linear-gradient(180deg, transparent, black 90%);
+    }
+
     .peek-read-more {
         z-index: 1;
         opacity: 0.2;
@@ -284,6 +288,7 @@ export default {
 
     .expandable-card {
         background-color: var(--bg-primary);
+        border: var(--border-primary);
         margin-bottom: 0 !important;
         margin-top: 5px;
     }
