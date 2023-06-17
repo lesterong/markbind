@@ -19,27 +19,48 @@ export default {
   },
   methods: {
     initThemeButton() {
-      const hasInitTheme = localStorage.getItem('theme') && (
-        localStorage.getItem('theme') === 'light' || localStorage.getItem('theme') === 'dark'
+      const hasInitTheme = localStorage.theme && (
+        localStorage.theme === 'light' || localStorage.theme === 'dark'
       );
       if (!hasInitTheme) {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          localStorage.setItem('theme', 'dark');
+          this.theme = 'dark';
         } else {
-          localStorage.setItem('theme', 'light');
+          this.theme = 'light';
         }
+      } else {
+        this.theme = localStorage.theme;
       }
-      this.theme = localStorage.getItem('theme');
-      document.documentElement.setAttribute('data-theme', this.theme);
+      if (this.theme === 'dark') {
+        this.setDarkTheme();
+      } else {
+        this.setLightTheme();
+      }
+    },
+    setDarkTheme() {
+      localStorage.theme = 'dark';
+      const codeblockLight = document.querySelector('[href="/markbind/css/codeblock-light.min.css"]');
+      if (codeblockLight) {
+        codeblockLight.setAttribute('href', '/markbind/css/codeblock-dark.min.css');
+      }
+      document.documentElement.setAttribute('data-theme', 'dark');
+    },
+    setLightTheme() {
+      localStorage.theme = 'light';
+      const codeblockDark = document.querySelector('[href="/markbind/css/codeblock-dark.min.css"]');
+      if (codeblockDark) {
+        codeblockDark.setAttribute('href', '/markbind/css/codeblock-light.min.css');
+      }
+      document.documentElement.setAttribute('data-theme', 'light');
     },
     toggleTheme() {
       if (this.theme === 'light') {
         this.theme = 'dark';
+        this.setDarkTheme();
       } else {
         this.theme = 'light';
+        this.setLightTheme();
       }
-      localStorage.setItem('theme', this.theme);
-      document.documentElement.setAttribute('data-theme', this.theme);
     },
   },
   mounted() {
