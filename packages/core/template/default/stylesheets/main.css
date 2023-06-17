@@ -1,6 +1,7 @@
 :root {
     --bg-primary: #fff;
     --color-primary: #212529;
+    --border-primary: 1px solid #d3d3d3;
     --bg-secondary: #f5f5f5;
     --color-secondary: #696969;
     --color-tertiary: #777;
@@ -15,6 +16,7 @@
 [data-theme="dark"] {
     --bg-primary: #121212;
     --color-primary: #fff;
+    --border-primary: 1px solid #a9a9a9;
     --bg-secondary: #333;
     --color-secondary: #ccc;
     --color-tertiary: #a9a9a9;
@@ -116,7 +118,7 @@ mark {
 }
 
 #site-nav {
-    border-right: 1px solid lightgrey;
+    border-right: var(--border-primary);
     padding-bottom: 20px;
     z-index: 999;
 }
