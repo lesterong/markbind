@@ -11,7 +11,7 @@
 }
 
 #mb-page-nav a:hover {
-    color: black;
+    color: var(--color-primary);
 }
 
 #mb-page-nav a.active {

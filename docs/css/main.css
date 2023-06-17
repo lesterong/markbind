@@ -35,11 +35,11 @@ body {
     background-color: var(--bg-primary);
 }
 
-a {
+.nav-link, a {
     color: var(--color-link);
 }
 
-a:hover {
+.nav-link:hover, a:hover {
     color: var(--color-link-hover);
 }
 
@@ -135,7 +135,7 @@ mark {
 }
 
 #page-nav {
-    border-left: 1px solid lightgrey;
+    border-left: var(--border-primary);
 }
 
 @media screen and (max-width: 1299.98px) {
