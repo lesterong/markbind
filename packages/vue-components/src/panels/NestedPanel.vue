@@ -53,12 +53,13 @@
               v-show="isExpandableCard && !noSwitchBool && !showCaret"
               :is-open="localExpanded"
               :is-light-bg="isLightBg"
+              :is-empty="!cardType"
             />
             <button
               v-show="!noCloseBool"
               type="button"
               class="close-button btn"
-              :class="[isLightBg ? 'btn-outline-secondary' : 'btn-outline-light',
+              :class="[!cardType || isLightBg ? 'btn-outline-secondary' : 'btn-outline-light',
                        { 'seamless-button': isSeamless }]"
               @click.stop="close()"
             >
@@ -68,7 +69,7 @@
               v-show="popupUrl"
               type="button"
               class="popup-button btn"
-              :class="[isLightBg ? 'btn-outline-secondary' : 'btn-outline-light',
+              :class="[!cardType || isLightBg ? 'btn-outline-secondary' : 'btn-outline-light',
                        { 'seamless-button': isSeamless }]"
               @click.stop="openPopup()"
             >
