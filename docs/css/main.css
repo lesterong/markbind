@@ -1,3 +1,44 @@
+:root {
+    --bg-primary: #fff;
+    --color-primary: #212529;
+    --bg-secondary: #f5f5f5;
+    --color-secondary: #696969;
+    --color-tertiary: #777;
+    --color-link: #006efd;
+    --color-link-hover: #0a58ca;
+    --color-blockquote: #6a737d;
+    --border-blockquote: 0.25em solid #dfe2e5;
+    --bg-table: #fff;
+    --color-site-nav-list-item: #454545;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --color-primary: #fff;
+    --bg-secondary: #333;
+    --color-secondary: #ccc;
+    --color-tertiary: #a9a9a9;
+    --color-link: #0af;
+    --color-link-hover: #0bf;
+    --color-blockquote: #999;
+    --border-blockquote: 0.25em solid #bbb;
+    --bg-table: #222;
+    --color-site-nav-list-item: #ccc;
+}
+
+body {
+    color: var(--color-primary);
+    background-color: var(--bg-primary);
+}
+
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
 mark {
     background-color: #ff0;
     border-radius: 5px;
