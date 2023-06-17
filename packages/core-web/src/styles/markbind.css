@@ -116,7 +116,7 @@ code.hljs.inline {
 
 .table {
     color: var(--color-primary);
-    border-color: var(--border-color-table);
+    border-color: var(--border-color-secondary);
 }
 
 .table-striped > thead,

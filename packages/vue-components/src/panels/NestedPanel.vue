@@ -185,6 +185,7 @@ export default {
     .card-header {
         color: var(--color-primary);
         background-color: var(--bg-primary);
+        border: 1px solid var(--border-color-secondary);
     }
 
     .card-header:hover .seamless-button {
