@@ -70,7 +70,7 @@ export default {
     }
 
     .toggle-site-nav-button span {
-        background-color: #000;
+        background-color: var(--color-primary);
         display: block;
         height: 3px;
         left: 15px;
