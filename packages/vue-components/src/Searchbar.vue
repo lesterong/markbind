@@ -312,6 +312,7 @@ export default {
         max-height: 30em;
         overflow-y: scroll;
         background-color: var(--bg-primary);
+        border: var(--border-primary);
     }
 
     @media screen and (max-width: 768px) {

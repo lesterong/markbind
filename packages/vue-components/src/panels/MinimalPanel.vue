@@ -165,7 +165,6 @@ export default {
 </script>
 
 <style scoped>
-
     .card-peek-collapsed {
         position: relative;
     }
@@ -188,12 +187,13 @@ export default {
         border-color: black;
         background-color: transparent;
         vertical-align: top;
+        color: var(--color-primary);
     }
 
     .morph-title:hover,
     .morph-title:active,
     .morph-title:focus {
-        color: white;
+        color: var(--color-primary);
         border-color: #343a40;
         background-color: #343a40;
     }
@@ -228,12 +228,13 @@ export default {
 
     .card-body {
         padding: 0;
+        background-color: var(--bg-primary);
     }
 
     .header-wrapper {
         width: 100%;
         display: inline-block;
-        background-color: white;
+        background-color: var(--bg-primary);
     }
 
     .header-wrapper-bottom {

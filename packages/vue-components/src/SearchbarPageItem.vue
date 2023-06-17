@@ -115,6 +115,7 @@ export default {
     }
 
     .page-headings-separator {
+        border: 0.025rem solid var(--border-color-table);
         margin: 0.2rem 0;
     }
 </style>
