@@ -13,6 +13,9 @@
     <li>
       <a href="https://github.com/MarkBind/markbind" target="_blank" class="nav-link"><md>:fab-github:</md></a>
     </li>
+    <li>
+        <theme-button class="nav-link"></theme-button>
+    </li>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>

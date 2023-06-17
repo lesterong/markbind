@@ -21,6 +21,7 @@ import searchbar from './Searchbar.vue';
 import tab from './Tab.vue';
 import tabGroup from './TabGroup.vue';
 import tabset from './Tabset.vue';
+import themeButton from './ThemeButton.vue';
 import thumbnail from './Thumbnail.vue';
 import trigger from './Trigger.vue';
 import siteNav from './SiteNav.vue';
@@ -65,6 +66,7 @@ const components = {
   'VPopover': Dropdown,
   'VTooltip': Tooltip,
   scrollTopButton,
+  themeButton,
 };
 
 const directives = {
