@@ -374,7 +374,7 @@ export default {
     }
 
     .alert.seamless {
-      background-color: var(--bg-primary);
+        background-color: var(--bg-primary);
     }
 
     .alert-border-left {

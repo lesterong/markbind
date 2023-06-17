@@ -35,11 +35,13 @@ body {
     background-color: var(--bg-primary);
 }
 
-.nav-link, a {
+.nav-link,
+a {
     color: var(--color-link);
 }
 
-.nav-link:hover, a:hover {
+.nav-link:hover,
+a:hover {
     color: var(--color-link-hover);
 }
 
