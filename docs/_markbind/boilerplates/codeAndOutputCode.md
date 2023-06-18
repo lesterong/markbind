@@ -20,7 +20,7 @@
 %%OUTPUT:%%
 <div class="indented">
 
-<box border-left-color="grey" background-color="white" color="black">
+<box border-left-color="grey" background-color="var(--bg-primary)">
 
 {{ code | safe }}
 </box>
