@@ -185,7 +185,7 @@ export default {
     .card-header {
         color: var(--color-primary);
         background-color: var(--bg-primary);
-        border: 1px solid var(--border-color-secondary);
+        border-bottom: 1px solid var(--border-color-secondary);
     }
 
     .card-header:hover .seamless-button {
@@ -289,7 +289,7 @@ export default {
 
     .expandable-card {
         background-color: var(--bg-primary);
-        border: var(--border-primary);
+        border: 1px solid var(--border-color-secondary);
         margin-bottom: 0 !important;
         margin-top: 5px;
     }

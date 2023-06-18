@@ -47,6 +47,7 @@ a:hover {
 
 .dropdown-menu {
     background-color: var(--bg-primary);
+    border: 1px solid var(--border-color-secondary);
 }
 
 .dropdown-menu > li > a {
