@@ -87,13 +87,20 @@ export default {
 
 <style>
     .popover-container {
+        background-color: var(--bg-secondary);
         overflow: auto;
         max-height: 50vh;
         max-width: 276px;  /* following bootstrap */
     }
 
+    .popover-header {
+        color: var(--color-primary);
+        background-color: var(--bg-primary);
+    }
+
     .popover-body {
         font-size: 0.875rem;  /* following bootstrap */
+        color: var(--color-primary);
     }
 
     .v-popper {

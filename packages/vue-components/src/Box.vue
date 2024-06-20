@@ -328,6 +328,11 @@ export default {
         padding-top: 0.5rem;
     }
 
+    .alert.alert-border-left {
+        color: var(--color-primary);
+        background-color: var(--bg-secondary);
+    }
+
     .alert-dismissible {
         padding-right: 4rem;
     }
@@ -363,9 +368,13 @@ export default {
     }
 
     .alert-default {
-        color: #24292e;
-        background-color: #f6f8fa;
+        color: var(--color-primary);
+        background-color: var(--bg-secondary);
         border-color: #e8ebef;
+    }
+
+    .alert.seamless {
+        background-color: var(--bg-primary);
     }
 
     .alert-border-left {

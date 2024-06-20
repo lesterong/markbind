@@ -107,6 +107,12 @@ export default {
         margin-bottom: 15px;
     }
 
+    .nav-tabs .nav-link.active {
+        color: var(--color-primary);
+        background-color: var(--bg-primary);
+        border-bottom-color: var(--bg-primary);
+    }
+
     .tab-content {
         margin-bottom: 1.5rem;
     }

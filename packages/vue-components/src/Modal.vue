@@ -135,6 +135,15 @@ export default {
         max-height: 100%;
     }
 
+    .modal-content {
+        background-color: var(--bg-secondary);
+        color: var(--color-primary);
+    }
+
+    [data-theme="dark"] .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+
     .modal-zoom {
         -webkit-transform: scale(0.1);
         -moz-transform: scale(0.1);

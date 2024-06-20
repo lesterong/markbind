@@ -311,10 +311,8 @@ export default {
         min-width: 30em;
         max-height: 30em;
         overflow-y: scroll;
-    }
-
-    .dropdown-menu > li > a {
-        cursor: pointer;
+        background-color: var(--bg-primary);
+        border: var(--border-primary);
     }
 
     @media screen and (max-width: 768px) {

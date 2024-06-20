@@ -11,17 +11,17 @@
 }
 
 #mb-page-nav a:hover {
-    color: black;
+    color: var(--color-primary);
 }
 
 #mb-page-nav a.active {
     background-color: transparent;
-    color: black;
+    color: var(--color-primary);
 }
 
 .page-nav-title {
     display: block;
-    color: black;
+    color: var(--color-primary);
     white-space: inherit;
     padding-left: 0.5rem;
 }

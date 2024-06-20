@@ -50,7 +50,7 @@ export default {
         display: flex;
         padding: 0.5rem 0 0 2.8rem;
         transition: background-color 0.08s;
-        color: #454545;
+        color: var(--color-site-nav-list-item);
         cursor: pointer;
     }
 
@@ -87,11 +87,11 @@ export default {
     .site-nav-default-list-item a {
         display: inline-block;
         height: 100%;
-        color: #454545;
+        color: var(--color-site-nav-list-item);
     }
 
     .site-nav-default-list-item:hover a {
-        color: black;
+        color: var(--color-primary);
         text-decoration: none;
     }
 

@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    :class="['collapse-button', 'btn', isLightBg ? 'btn-outline-secondary' : 'btn-outline-light']"
+    :class="['collapse-button', 'btn', isLightBg || isEmpty ? 'btn-outline-secondary' : 'btn-outline-light']"
   >
     <span
       :class="['collapse-icon', 'glyphicon', 'glyphicon-menu-down', {'opened': isOpenBool}]"
@@ -22,6 +22,10 @@ export default {
     isLightBg: {
       type: Boolean,
       default: true,
+    },
+    isEmpty: {
+      type: Boolean,
+      default: false,
     },
   },
   computed: {

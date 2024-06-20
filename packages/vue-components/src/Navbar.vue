@@ -400,8 +400,8 @@ export default {
     }
 
     .lower-navbar-container {
-        background-color: #fff;
-        border-bottom: 1px solid #c1c1c1;
+        background-color: var(--bg-primary);
+        border-bottom: 1px solid var(--border-color-secondary);
         height: 50px;
         width: 100%;
         position: relative;
